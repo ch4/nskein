@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nskein", "nskein\nskein.csproj", "{56B11AD2-573C-4EA5-9EE5-BEDA56A91F25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nskeintest", "nskeintest\nskeintest.csproj", "{E40577BC-A1FC-4998-93FE-AD2B942D26D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56B11AD2-573C-4EA5-9EE5-BEDA56A91F25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B11AD2-573C-4EA5-9EE5-BEDA56A91F25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B11AD2-573C-4EA5-9EE5-BEDA56A91F25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56B11AD2-573C-4EA5-9EE5-BEDA56A91F25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E40577BC-A1FC-4998-93FE-AD2B942D26D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40577BC-A1FC-4998-93FE-AD2B942D26D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40577BC-A1FC-4998-93FE-AD2B942D26D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40577BC-A1FC-4998-93FE-AD2B942D26D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
