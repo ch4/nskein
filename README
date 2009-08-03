@@ -1,0 +1,25 @@
+nskein
+Sriram Krishnan <mail@sriramkrishnan.com>
+
+Managed implementation of Skein. The source is in the public domain - feel free to do whatever you want with it.
+The code comes with no warranties whatsoever. You don't have to attribute usage but I wouldn't mind it :-)
+
+Skein is an entry in the NIST SHA 3 contest from Bruce Schneier, Niels Ferguson et. al. Though there is a reference
+implementation as part of their submission, I implemented mine based on a reading of their submission paper. It is
+*not* optimised for speed. In fact, I'm sure it is downright slow as it is optimized for readability. In this sense,
+it is loosely based on a Java version from http://www.xs4all.nl/~warper/.
+
+Using it is simple. Use any of the types descended from SimpleSkeinManaged namely Skein512Managed, Skein256Managed and
+Skein1024Managed. You can pass the output size you want or choose the default (which is typically blocksize/2).  Since
+it implements System.Security.Cryptography.HashAlgorithm, you can use these types wherever .NET takes in a HashAlgorithm-
+derived instance.
+
+The nskeintest project contains tests which exercices the code against test data from the official submission. It is also
+a good way to look at usage.
+
+Sample usage
+-----------
+var skein256 = new Skein512Managed(256); //Skein 512-256
+byte[] output = skein256.ComputeHash(someinputdata);
+
+
