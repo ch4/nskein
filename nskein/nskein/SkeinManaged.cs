@@ -32,7 +32,7 @@ namespace nskein
         //
         // Skein 1024 with 512 bit output by default.
         //
-        public Skein1024Managed() : base(1024, 512) { }
+        public Skein1024Managed() : base(1024, 1024) { }
         public Skein1024Managed(UInt32 outputInBits) : base(1024, outputInBits) { }
     }
 }

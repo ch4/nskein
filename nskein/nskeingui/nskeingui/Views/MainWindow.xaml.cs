@@ -19,6 +19,9 @@ namespace nskeingui.Views {
 
         private string Skeinify(SimpleSkeinManaged skein, string message) {
             message = message.Replace(" ", "").Replace("\r\n", "");
+            //byte[] input = message.ToCharArray();//Util.ByteArrayfromHex(message);
+            System.Text.ASCIIEncoding encoding = new System.Text.ASCIIEncoding();
+            //byte[] input = encoding.GetBytes(message);
             byte[] input = Util.ByteArrayfromHex(message);
             byte[] output = skein.ComputeHash(input);
 
@@ -30,7 +33,7 @@ namespace nskeingui.Views {
             Skein1024Managed skein1024 = new Skein1024Managed();
             this.SeedString = this.seedtxt.Text;
             this.BestHashString = Skeinify(skein1024, this.SeedString);
-            this.BestHashString = Skeinify(skein1024, BestHashString);
+            //this.BestHashString = Skeinify(skein1024, BestHashString);
             this.outputtxt.Text = this.BestHashString;
 
         }
